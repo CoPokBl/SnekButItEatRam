@@ -8,4 +8,4 @@ This snake game but when you die it takes 1 GB of RAM
 Why not, I was bored
 
 ## OMG A VIRUS
-I mean, you could call it that but it doesn't do anything except use RAM. If you don't want your computer's RAM to be filled then just don't run it. And btw, it's not a virus because viruses spread.
+I mean, you could call it that but it doesn't do anything except eat RAM. If you don't want your computer's RAM to be filled then just don't run it. And btw, it's not a virus because viruses spread.
