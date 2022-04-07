@@ -4,7 +4,7 @@ WARNING: This will take up 1GB of RAM everytime you die, use at your own risk!
 ## Wtf is this
 This snake game but when you die it takes 1 gb of RAM
 
-## Why!?!?
+## Why!?!?!
 Why not, I was bored
 
 ## OMG A VIRUS
