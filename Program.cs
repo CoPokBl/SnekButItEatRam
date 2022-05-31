@@ -14,22 +14,7 @@ namespace SnekButItEatRam {
   private static int             memSnakeLength;
   private static int             memRamCount;
   private static bool            allowExit;
-  private static readonly byte[] mem             = new byte[2000000000];
-  private static readonly byte[] Mem2            = new byte[2000000000];
-  private static readonly byte[] Mem3            = new byte[2000000000];
-  private static readonly byte[] Mem4            = new byte[2000000000];
-  private static readonly byte[] Mem5            = new byte[2000000000];
-  private static readonly byte[] Mem6            = new byte[2000000000];
-  private static readonly byte[] Mem7            = new byte[2000000000];
-  private static readonly byte[] Mem8            = new byte[2000000000];
-  private static readonly byte[] Mem9            = new byte[2000000000];
-  private static readonly byte[] Mem10           = new byte[2000000000];
-  private static readonly byte[] Mem11           = new byte[2000000000];
-  private static readonly byte[] Mem12           = new byte[2000000000];
-  private static readonly byte[] Mem13           = new byte[2000000000];
-  private static readonly byte[] Mem14           = new byte[2000000000];
-  private static readonly byte[] Mem15           = new byte[2000000000];
-  private static readonly byte[] Mem16           = new byte[2000000000];
+  private static readonly byte[][] mem             = new byte[1000000000][];
 
   private static void Main() {
    AppDomain.CurrentDomain.ProcessExit += OnExit; 
@@ -70,113 +55,16 @@ namespace SnekButItEatRam {
    // Fill the mem variables with 0s
    for (int i = 0; i < mem.Length; i++) {
     Console.WriteLine("Filling index: " + i);
-    mem[i] = 0;
-    Mem2[i] = 0;
-    Mem3[i] = 0;
-    Mem4[i] = 0;
-    Mem5[i] = 0;
-    Mem6[i] = 0;
-    Mem7[i] = 0;
    }
 
   }
 
   private static void TakeMoreRam() {
    Console.Title = memRamCount.ToString();
-   switch (memRamCount) {
-    case 0:
-     for (int i = 0; i < Mem2.Length/2; i++) { Mem2[i] = 0; }
-     break;
-    case 1:
-     for (int i = 0; i < Mem3.Length/2; i++) { Mem3[i] = 0; }
-     break;
-    case 2:
-     for (int i = 0; i < Mem4.Length/2; i++) { Mem4[i] = 0; }
-     break;
-    case 3:
-     for (int i = 0; i < Mem5.Length/2; i++) { Mem5[i] = 0; }
-     break;
-    case 4:
-     for (int i = 0; i < Mem6.Length/2; i++) { Mem6[i] = 0; }
-     break;
-    case 5:
-     for (int i = 0; i < Mem7.Length/2; i++) { Mem7[i] = 0; }
-     break;
-    case 6:
-     for (int i = 0; i < Mem8.Length/2; i++) { Mem8[i] = 0; }
-     break;
-    case 7:
-     for (int i = 0; i < Mem9.Length/2; i++) { Mem9[i] = 0; }
-     break;
-    case 8:
-     for (int i = 0; i < Mem10.Length/2; i++) { Mem10[i] = 0; }
-     break;
-    case 9:
-     for (int i = 0; i < Mem11.Length/2; i++) { Mem11[i] = 0; }
-     break;
-    case 10:
-     for (int i = 0; i < Mem12.Length/2; i++) { Mem12[i] = 0; }
-     break;
-    case 11:
-     for (int i = 0; i < Mem13.Length/2; i++) { Mem13[i] = 0; }
-     break;
-    case 12:
-     for (int i = 0; i < Mem14.Length/2; i++) { Mem14[i] = 0; }
-     break;
-    case 13:
-     for (int i = 0; i < Mem15.Length/2; i++) { Mem15[i] = 0; }
-     break;
-    case 14:
-     for (int i = 0; i < Mem16.Length/2; i++) { Mem16[i] = 0; }
-     break;
-    case 15:
-     for (int i = mem.Length/2; i < mem.Length; i++) { mem[i] = 0; }
-     break;
-    case 16:
-     for (int i = Mem2.Length/2; i < Mem2.Length; i++) { Mem2[i] = 0; }
-     break;
-    case 17:
-     for (int i = Mem3.Length/2; i < Mem3.Length; i++) { Mem3[i] = 0; }
-     break;
-    case 18:
-     for (int i = Mem4.Length/2; i < Mem4.Length; i++) { Mem4[i] = 0; }
-     break;
-    case 19:
-     for (int i = Mem5.Length/2; i < Mem5.Length; i++) { Mem5[i] = 0; }
-     break;
-    case 20:
-     for (int i = Mem6.Length/2; i < Mem6.Length; i++) { Mem6[i] = 0; }
-     break;
-    case 21:
-     for (int i = Mem7.Length/2; i < Mem7.Length; i++) { Mem7[i] = 0; }
-     break;
-    case 22:
-     for (int i = Mem8.Length/2; i < Mem8.Length; i++) { Mem8[i] = 0; }
-     break;
-    case 23:
-     for (int i = Mem9.Length/2; i < Mem9.Length; i++) { Mem9[i] = 0; }
-     break;
-    case 24:
-     for (int i = Mem10.Length/2; i < Mem10.Length; i++) { Mem10[i] = 0; }
-     break;
-    case 25:
-     for (int i = Mem11.Length/2; i < Mem11.Length; i++) { Mem11[i] = 0; }
-     break;
-    case 26:
-     for (int i = Mem12.Length/2; i < Mem12.Length; i++) { Mem12[i] = 0; }
-     break;
-    case 27:
-     for (int i = Mem13.Length/2; i < Mem13.Length; i++) { Mem13[i] = 0; }
-     break;
-    case 28:
-     for (int i = Mem14.Length/2; i < Mem14.Length; i++) { Mem14[i] = 0; }
-     break;
-    case 29:
-     for (int i = Mem15.Length/2; i < Mem15.Length; i++) { Mem15[i] = 0; }
-     break;
-    case 30:
-     for (int i = Mem16.Length/2; i < Mem16.Length; i++) { Mem16[i] = 0; }
-     break;
+   mem[memRamCount] = new byte[1000000000];
+   // fill
+   for (int j = 0; j < mem[memRamCount].Length; j++) {
+    mem[memRamCount][j] = 1;
    }
    Console.WriteLine(GC.GetTotalMemory(true));
   }
